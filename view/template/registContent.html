@@ -1,0 +1,22 @@
+<div class="webapp-regist-content">
+    <div class="regist-form">
+        <p class="regist-phone">
+            <span class="regist-icon"><i class="iconfont icon-wode"></i></span>
+            <input type="text" placeholder="输入手机号" ng-model="phone" ng-blur="checkRegistPhone()">
+            <span class="checkInfo" ng-bind="phoneCheck"></span>
+        </p>
+        <p class="regist-pwd">
+            <span class="regist-icon"><i class="iconfont icon-mima"></i></span>
+            <input type="password" placeholder="输入6位以上的密码" ng-model="pwd" ng-blur="checkRegistPwd()">
+            <span class="checkInfo" ng-bind="pwdCheck"></span>
+        </p>
+        <p class="regist-code">
+        	<input type="text" placeholder="短信验证码" ng-model="codeText" id="code">
+            <span class="checkInfo" ng-bind="codeCheck"></span>
+        	<span class="sendMessage" ng-click="doSend()">发送短信</span>
+        </p>
+        <p class="registInfo" ng-hide="all" ng-bind="allInfo"></p>
+        <button class="regist-subLogin" ui-sref="login">登录</button>
+        <button class="regist-subRegister" ng-click="checkRegistCode()">注册</button>
+    </div>
+</div>

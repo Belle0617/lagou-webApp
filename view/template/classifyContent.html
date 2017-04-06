@@ -1,0 +1,15 @@
+<div class="classify-content">
+	<div app-position-company></div>
+	<div class="classify-class">
+		<p>职位分类</p>
+		<ul>
+			<li ng-bind='item.name' ng-repeat="item in company.positionClass" ng-click="click($index)" class="{{$index===isActive ? 'classify-change':'classify-change2'}}"></li>
+		</ul>
+
+ 		<div class="classify-list-content"  ng-repeat="pos in list">
+			<p>{{pos.name}}</p>
+			<p>{{pos.createdDate}}</p>
+			<span>{{pos.salary}}</span>
+		</div>
+	</div>
+</div> 

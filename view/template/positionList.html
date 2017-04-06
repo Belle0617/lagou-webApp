@@ -1,0 +1,9 @@
+<ul class="webapp-positionList">
+    <li  ng-repeat="list in list|filterByObj:filterObj">
+    	<img ng-src="{{list.imageUrl}}" alt="" class="webapp-positionList-img" >
+    	<span class="webapp-positionList-content" ui-sref="detail({id:list.id})">{{list.companyName}}[{{list.cityName}}] {{list.industryName}} {{list.scaleName}}</span>
+    	<span class="webapp-positionList-salary">{{list.salaryName}}</span>
+    	<span class="webapp-positionList-date">{{list.date}}</span>
+    	<img ng-src="{{starImg}}" class="webapp-position-star" do-star="doStar">
+    </li>
+</ul>

@@ -1,0 +1,15 @@
+<div class="webapp-login-content">
+    <div class="login-form">
+        <p class="login-phone">
+            <span><i class="iconfont icon-wode"></i></span>
+            <input type="text" placeholder="输入手机号" id="phone" ng-model="phone">
+        </p>
+        <p class="login-pwd">
+            <span><i class="iconfont icon-mima"></i></span>
+            <input type="password" placeholder="输入密码" id="pwd" ng-model="pwd">
+        </p>
+        <p class="loginInfo" ng-hide="all" ng-bind="allInfo"></p>
+        <button class="login-subLogin" ng-click="doLogin()">登录</button>
+        <button class="login-subRegister" ui-sref="regist">注册</button>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<!-- <ul class="search-class">
+	<li ng-click="chooseCity()" ng-class="cityStyle">城市</li>
+	<li ng-click="chooseSalary()" ng-class="salaryStyle">薪水</li>
+	<li ng-click="chooseScale()" ng-class="scaleStyle">公司规模</li>
+</ul> -->
+<ul class="search-class">
+    <li ng-repeat="item in list" ng-bind="item.name" ng-click="tabClick(item)" class=" {{tabId===item.id?'underline':''}}"></li>
+</ul>

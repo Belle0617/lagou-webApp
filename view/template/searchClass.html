@@ -1,0 +1,6 @@
+<div class="search-city" ng-show="visible">
+	<ul>
+		<li ng-repeat="item in selectList" ng-bind="item.name" ng-click="selectClick(item)">{{item.name}}</li>
+	</ul>
+	<button ng-click="visible=false">取消</button>
+</div>

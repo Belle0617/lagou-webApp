@@ -1,0 +1,7 @@
+<div class="webapp-logined-me">
+	<img ng-src="{{user.image}}" class="webapp-user-img">
+	<p class="webapp-user-name">{{user.name}}</p>
+	<span class="webapp-user-resume" ui-sref="deliver">投递</span>
+	<span class="webapp-user-star" ui-sref="collect">收藏</span>
+	<p class="webapp-user-logout" ng-click="doExit()">退出登录</p>
+</div>

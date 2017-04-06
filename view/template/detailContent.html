@@ -1,0 +1,13 @@
+<div class="webapp-positionDetail-content">
+    <div class="webapp-positionDetail-content1">
+        <p>{{positionDetail.name}}<span class="webapp-positionDetail-salary">{{positionDetail.salaryName}}</span></p>
+        <p>{{positionDetail.cityName}}<span class="webapp-positionDetail-experience">{{positionDetail.experience}}</span>{{positionDetail.education}}</p>
+        <p>{{positionDetail.benefit}}</p>
+        <img ng-src="{{imgSrc}}" ng-click="doCollect()" class="webapp-position-star" ng-show="show">
+    </div>
+    <div app-position-company></div>
+    <div class="webapp-positionDetail-content3">
+        <p class="webapp-positionDetail-contentTitle">职位描述</p>
+        <pre class="webapp-positionDetail-contentDescription">{{positionDetail.description}}</pre>
+    </div>
+</div>
